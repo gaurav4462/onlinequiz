@@ -1,0 +1,45 @@
+1. What is Cloud Computing?
+                          question_id = 1
+a. Cloud Computing means providing services like storage, servers, database, networking, etc
+b. Cloud Computing means storing data in a database
+c. Cloud Computing is a tool used to create an application
+d. None of the mentioned
+                          response_id = d
+---------------------------------
+
+2. Which of the following is an example of an IaaS Cloud service?
+                          question_id = 10
+a. DigitalOcean
+b.  Linode
+c. Rackspace
+d. All of the above
+                          response_id = 0
+---------------------------------
+
+3. Who is the father of cloud computing?
+                          question_id = 2
+a. Sharon B. Codd
+b. Edgar Frank Codd
+c. J.C.R. Licklider
+d. Charles Bachman
+                          response_id = 0
+---------------------------------
+
+4. Applications and services that run on a distributed network using virtualized resources is known as _____
+                          question_id = 8
+a. Parallel computing
+b. Soft computing
+c. Distributed computing
+d. Cloud computing
+                          response_id = 0
+---------------------------------
+
+5. Which of the following is an example of a PaaS cloud service?
+                          question_id = 9
+a.  Heroku
+b.  AWS Elastic Beanstalk
+c. Windows Azure
+d.  All of the above
+                          response_id = 0
+---------------------------------
+

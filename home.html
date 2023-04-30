@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz Website</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+    <style>
+        body {
+	font-family: Arial, sans-serif;
+	background-color: #f1f1f1;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 40px 20px;
+}
+
+h1 {
+	font-size: 48px;
+	margin-bottom: 10px;
+}
+
+p {
+	font-size: 24px;
+	margin-bottom: 40px;
+}
+
+.buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.start-quiz-btn, .create-quiz-btn {
+	display: inline-block;
+	padding: 20px 40px;
+	border-radius: 30px;
+	border: none;
+	font-size: 24px;
+	font-weight: bold;
+	color: #fff;
+	background-color: #2ecc71;
+	margin: 0 10px;
+	transition: background-color 0.2s ease;
+	text-decoration: none;
+}
+
+.start-quiz-btn:hover, .create-quiz-btn:hover {
+	background-color: #27ae60;
+	cursor: pointer;
+}
+
+.start-quiz-btn::before, .create-quiz-btn::before {
+	content: url('https://www.example.com/images/quiz-icon.png');
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.create-quiz-btn {
+	background-color: #3498db;
+}
+
+.create-quiz-btn::before {
+	content: url('https://www.example.com/images/create-icon.png');
+	margin-left: 10px;
+	margin-right: 0;
+}
+
+@media only screen and (max-width: 600px) {
+	h1 {
+		font-size: 36px;
+	}
+
+	p {
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+
+	.buttons {
+		flex-direction: column;
+	}
+
+	.start-quiz-btn, .create-quiz-btn {
+		display: block;
+		margin: 10px 0;
+		padding: 15px 30px;
+		font-size: 20px;
+	}
+}
+
+.navbar {
+	background-color: #333;
+	overflow: hidden;
+}
+
+.navbar a {
+	float: left;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.navbar a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.navbar a.active {
+	background-color: #4CAF50;
+	color: white;
+}
+
+.login-btn, .signup-btn {
+	float: right;
+}
+
+@media only screen and (max-width: 600px) {
+	.navbar a, .login-btn, .signup-btn {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+}
+
+    </style>
+</head>
+<body>
+	<div class="navbar">
+		<a href="home.html" class="active">Home</a>
+		<a href="login.php" class="login-btn" id="login-btn">Login</a>
+		<a href="signup.php" class="signup-btn">Sign Up</a>
+	</div>
+	<div class="container">
+		<h1>Welcome to our Quiz Website</h1>
+		<p>Test your knowledge with our quizzes!</p>
+		<div class="buttons">
+			<a href="quizmain.php" class="start-quiz-btn" id="start-quiz-btn">Start Quiz</a>
+			<a href="upload.php" class="create-quiz-btn">Evaluation</a>
+		</div>
+	</div>
+
+	<!-- <script>
+		var loginBtn = document.getElementById("login-btn");
+		var startQuizBtn = document.getElementById("start-quiz-btn");
+
+		// Check if user is logged in
+		if (userIsLoggedIn()) {
+			loginBtn.style.display = "none"; // hide login button
+			startQuizBtn.href = "quizmain.php"; // set link to quiz page
+		} else {
+			startQuizBtn.addEventListener("click", function(event) {
+				event.preventDefault(); // prevent default link behavior
+				window.location.href = "login.php"; // redirect to login page
+			});
+		}
+
+		function userIsLoggedIn() {
+			// Implement your own logic here to check if user is logged in
+			// You can use cookies, sessions or any other method to store user login state
+			// For example, you can check if a cookie with a specific name exists and its value is set to "true"
+			// Return true if user is logged in, otherwise return false
+			return false; // default value for testing purposes
+		} -->
+	</script>
+</body>
+</html>
